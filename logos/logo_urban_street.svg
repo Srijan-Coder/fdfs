@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE600" />
+      <stop offset="50%" stop-color="#FF5500" />
+      <stop offset="100%" stop-color="#FF0055" />
+    </linearGradient>
+    <radialGradient id="fireAura" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#08080C" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" rx="40" fill="#08080C" />
+  <circle cx="400" cy="400" r="320" fill="url(#fireAura)" />
+
+  <g transform="translate(400, 310) skewX(-10)">
+    <!-- Speed Wings / Energy Stencil -->
+    <path d="M-220,-80 L200,-80 L180,-60 L-240,-60 Z" fill="url(#fireGrad)" opacity="0.8" />
+    <path d="M-260,-40 L240,-40 L220,-20 L-280,-20 Z" fill="#FFFFFF" opacity="0.15" />
+
+    <!-- Big Bold FDFS Monogram -->
+    <text x="0" y="50" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-size="140" font-weight="900" letter-spacing="4" fill="url(#fireGrad)">
+      FDFS
+    </text>
+
+    <!-- Speed Slash Lines through text -->
+    <line x1="-280" y1="10" x2="280" y2="10" stroke="#08080C" stroke-width="6" />
+    <line x1="-280" y1="18" x2="280" y2="18" stroke="url(#fireGrad)" stroke-width="2" />
+  </g>
+
+  <!-- Typography Block -->
+  <g transform="translate(400, 480)">
+    <text x="0" y="40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="900" letter-spacing="12" fill="#FFFFFF">
+      FLAWLESS
+    </text>
+    
+    <text x="0" y="85" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" letter-spacing="8" fill="url(#fireGrad)">
+      DANCE &amp; FITNESS STUDIO
+    </text>
+
+    <!-- Pill Badges -->
+    <rect x="-190" y="115" width="380" height="36" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <text x="0" y="139" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#E2E8F0">
+      HIP HOP · BOLLYWOOD · ZUMBA · YOGA
+    </text>
+
+    <text x="0" y="190" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" letter-spacing="5" fill="#64748B">
+      SECTOR 16 &amp; SECTOR 5 · GHANSOLI, NAVI MUMBAI
+    </text>
+  </g>
+</svg>

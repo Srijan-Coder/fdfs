@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crestGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="innerGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+    <radialGradient id="sunburst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#050608" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" rx="40" fill="#050608" />
+  <circle cx="400" cy="400" r="320" fill="url(#sunburst)" />
+
+  <!-- Outer Crest Ring -->
+  <circle cx="400" cy="400" r="330" fill="none" stroke="url(#crestGold)" stroke-width="3" stroke-dasharray="12 6" opacity="0.6" />
+  <circle cx="400" cy="400" r="310" fill="none" stroke="url(#crestGold)" stroke-width="2" />
+  <circle cx="400" cy="400" r="280" fill="url(#innerGlass)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+
+  <!-- Circular Text Path -->
+  <path id="textCircleTop" d="M 170,400 A 230,230 0 0,1 630,400" fill="none" />
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" letter-spacing="8" fill="url(#crestGold)">
+    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">
+      FLAWLESS DANCE &amp; FITNESS STUDIO
+    </textPath>
+  </text>
+
+  <path id="textCircleBottom" d="M 630,400 A 230,230 0 0,1 170,400" fill="none" />
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" letter-spacing="6" fill="#94A3B8">
+    <textPath href="#textCircleBottom" startOffset="50%" text-anchor="middle">
+      ★ GHANSOLI · NAVI MUMBAI · ESTD 2018 ★
+    </textPath>
+  </text>
+
+  <!-- Center Dancer Silhouette & Wings -->
+  <g transform="translate(400, 400)">
+    <!-- Laurel Wreath Left -->
+    <path d="M-170,80 C-190,0 -180,-100 -120,-170 M-170,40 C-180,0 -160,-60 -130,-110" 
+          fill="none" stroke="url(#crestGold)" stroke-width="4" stroke-linecap="round" />
+    <circle cx="-165" cy="-20" r="6" fill="url(#crestGold)" />
+    <circle cx="-150" cy="-70" r="5" fill="url(#crestGold)" />
+    <circle cx="-125" cy="-120" r="4" fill="url(#crestGold)" />
+
+    <!-- Laurel Wreath Right -->
+    <path d="M170,80 C190,0 180,-100 120,-170 M170,40 C180,0 160,-60 130,-110" 
+          fill="none" stroke="url(#crestGold)" stroke-width="4" stroke-linecap="round" />
+    <circle cx="165" cy="-20" r="6" fill="url(#crestGold)" />
+    <circle cx="150" cy="-70" r="5" fill="url(#crestGold)" />
+    <circle cx="125" cy="-120" r="4" fill="url(#crestGold)" />
+
+    <!-- Leaping Dancer Silhouette -->
+    <!-- Head -->
+    <circle cx="0" cy="-90" r="14" fill="#FFFFFF" />
+    <!-- Dynamic Body / Graceful Leap -->
+    <path d="M-10,-70 C-15,-40 -20,-10 -5,20 C5,40 30,80 60,110 L45,115 C20,80 -5,40 -15,10 C-25,-20 -20,-60 -10,-70 Z" fill="#FFFFFF" />
+    <!-- Extended Leg Backwards -->
+    <path d="M-8,15 C-40,10 -80,-10 -115,-35 L-110,-45 C-75,-20 -40,-2 -8,15 Z" fill="#FFFFFF" />
+    <!-- Extended Arms -->
+    <path d="M-10,-55 C-45,-65 -80,-85 -100,-115 L-90,-120 C-70,-95 -40,-75 -10,-55 Z" fill="#FFFFFF" />
+    <path d="M-5,-55 C30,-70 65,-95 85,-130 L95,-125 C75,-85 35,-60 -5,-55 Z" fill="url(#crestGold)" />
+
+    <!-- Central Monogram Ribbon -->
+    <rect x="-80" y="40" width="160" height="34" rx="8" fill="#11131F" stroke="url(#crestGold)" stroke-width="2" />
+    <text x="0" y="64" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" letter-spacing="4" fill="#FFFFFF">
+      FDFS
+    </text>
+  </g>
+</svg>

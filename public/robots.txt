@@ -1,0 +1,35 @@
+# Flawless Dance & Fitness Studio (FDFS) robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/admin/
+
+# Explicitly welcome modern AI Search Engines (Perplexity, GPTBot, ClaudeBot, Google-Extended, etc.)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://flawlessdance.in/sitemap.xml

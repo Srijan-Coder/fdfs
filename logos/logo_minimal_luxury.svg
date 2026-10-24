@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="silverPlat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <radialGradient id="softAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#04060A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" rx="40" fill="#04060A" />
+  <circle cx="400" cy="400" r="320" fill="url(#softAura)" />
+
+  <!-- Geometric Minimalist Floating Glass Diamond -->
+  <g transform="translate(400, 310)">
+    <rect x="-110" y="-110" width="220" height="220" rx="36" transform="rotate(45)" 
+          fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2" />
+    <rect x="-90" y="-90" width="180" height="180" rx="28" transform="rotate(45)" 
+          fill="none" stroke="url(#cyanAccent)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" />
+
+    <!-- Pure Minimalist Kinetic F-Wave Emblem -->
+    <path d="M-40,45 L-40,-50 L25,-50 M-40,-5 L15,-5" 
+          fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M25,-50 C55,-10 30,30 -5,55" 
+          fill="none" stroke="url(#cyanAccent)" stroke-width="6" stroke-linecap="round" />
+    <circle cx="0" cy="0" r="4" fill="#00F0FF" />
+  </g>
+
+  <!-- High-End Luxury Editorial Typography -->
+  <g transform="translate(400, 520)">
+    <text x="0" y="30" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Cinzel', serif" font-size="44" font-weight="700" letter-spacing="16" fill="url(#silverPlat)">
+      FLAWLESS
+    </text>
+    
+    <text x="0" y="70" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="600" letter-spacing="8" fill="url(#cyanAccent)">
+      DANCE &amp; FITNESS STUDIO
+    </text>
+
+    <line x1="-120" y1="95" x2="120" y2="95" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+
+    <text x="0" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" letter-spacing="6" fill="#64748B">
+      ESTD 2018 · GHANSOLI, NAVI MUMBAI
+    </text>
+
+    <text x="0" y="160" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="4" fill="#94A3B8">
+      SECTOR 16 · SECTOR 5
+    </text>
+  </g>
+</svg>

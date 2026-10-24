@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDFS Logo Suite Preview — Canva Ready</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #06070B;
+      color: #F8FAFC;
+      font-family: 'Inter', sans-serif;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(255, 46, 147, 0.15);
+      border: 1px solid rgba(255, 46, 147, 0.4);
+      color: #FF2E93;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: #94A3B8;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 24px;
+      backdrop-filter: blur(20px);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 46, 147, 0.4);
+    }
+    .logo-container {
+      background: #090B10;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .card-meta h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #FFFFFF;
+    }
+    .card-meta p {
+      font-size: 14px;
+      color: #94A3B8;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .tag-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #CBD5E1;
+    }
+    .btn-row {
+      margin-top: auto;
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #FF2E93 0%, #8B5CF6 100%);
+      color: #FFFFFF;
+    }
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #E2E8F0;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .canva-box {
+      max-width: 1300px;
+      margin: 50px auto 0;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(255, 46, 147, 0.1) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+    .canva-box h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .canva-box p {
+      color: #CBD5E1;
+      font-size: 15px;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    .canva-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: #7D2AE8;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      font-size: 15px;
+      box-shadow: 0 4px 20px rgba(125, 42, 232, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="badge">Flawless Dance &amp; Fitness Studio</div>
+    <h1>Official Logo Suite &amp; Canva Designs</h1>
+    <p class="subtitle">4 bespoke, scalable vector logos created for FDFS Ghansoli. Open any file in Canva to customize fonts, colors, or export high-resolution transparent PNGs.</p>
+  </div>
+
+  <div class="grid">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="logo-container">
+        <img src="logo_monogram_liquid.svg" alt="FDFS Kinetic Monogram">
+      </div>
+      <div class="card-meta">
+        <h3>Option 1: Kinetic Liquid Monogram</h3>
+        <p>Interlocking 'FDFS' letterforms fused with fluid dance motion ribbons in vibrant neon magenta, purple, and gold.</p>
+        <div class="tag-row">
+          <span class="tag">Liquid Glass</span>
+          <span class="tag">Modern</span>
+          <span class="tag">Flagship</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="logo_monogram_liquid.svg" target="_blank" class="btn btn-primary">View Full SVG</a>
+        <a href="logo_monogram_liquid.svg" download class="btn btn-secondary">Download</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="logo-container">
+        <img src="logo_studio_crest.svg" alt="FDFS Academy Crest">
+      </div>
+      <div class="card-meta">
+        <h3>Option 2: Academy Gold Crest (Soul 2 Sole Elevated)</h3>
+        <p>Prestigious circular emblem with victory laurels, leaping dancer silhouette, and ESTD 2018 heritage ribbon.</p>
+        <div class="tag-row">
+          <span class="tag">Prestige Crest</span>
+          <span class="tag">Gold Foil</span>
+          <span class="tag">Academy</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="logo_studio_crest.svg" target="_blank" class="btn btn-primary">View Full SVG</a>
+        <a href="logo_studio_crest.svg" download class="btn btn-secondary">Download</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="logo-container">
+        <img src="logo_urban_street.svg" alt="FDFS Urban Street">
+      </div>
+      <div class="card-meta">
+        <h3>Option 3: High-Energy Streetwear &amp; Fitness</h3>
+        <p>Edgy speed stencil typography built for Hip Hop, Waacking, and Zumba athletic energy with speed-cut lines.</p>
+        <div class="tag-row">
+          <span class="tag">Hip Hop</span>
+          <span class="tag">Fitness</span>
+          <span class="tag">Street Style</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="logo_urban_street.svg" target="_blank" class="btn btn-primary">View Full SVG</a>
+        <a href="logo_urban_street.svg" download class="btn btn-secondary">Download</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="logo-container">
+        <img src="logo_minimal_luxury.svg" alt="FDFS Minimal Luxury">
+      </div>
+      <div class="card-meta">
+        <h3>Option 4: Minimalist Luxury Wordmark</h3>
+        <p>Clean editorial typography with cyber cyan and platinum silver accents, ideal for contemporary and yoga classes.</p>
+        <div class="tag-row">
+          <span class="tag">Minimalist</span>
+          <span class="tag">Luxury</span>
+          <span class="tag">Contemporary</span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="logo_minimal_luxury.svg" target="_blank" class="btn btn-primary">View Full SVG</a>
+        <a href="logo_minimal_luxury.svg" download class="btn btn-secondary">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="canva-box">
+    <h2>🎨 How to Edit Any Logo in Canva</h2>
+    <p>1. Open <a href="https://www.canva.com" target="_blank" style="color: #FF2E93; text-decoration: underline;">Canva.com</a>.<br>
+    2. Click <b>"Upload"</b> or drag and drop any of the 4 <code>.svg</code> files above directly onto Canva.<br>
+    3. Every curve, text layer, and color is 100% editable without losing quality or using Canva AI credits!</p>
+    <a href="https://www.canva.com/create/logos/" target="_blank" class="canva-link-btn">
+      Open Canva Logo Editor →
+    </a>
+  </div>
+
+</body>
+</html>
