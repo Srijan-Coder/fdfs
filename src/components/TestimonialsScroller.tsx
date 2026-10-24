@@ -123,9 +123,9 @@ function ReviewVideoCard({
         </p>
 
         <div className="pt-3 hairline-t">
-          <h5 className="font-display font-bold text-sm text-offwhite group-hover:text-accent transition-colors">
+          <h4 className="font-display font-bold text-sm text-offwhite group-hover:text-accent transition-colors">
             {item.name}
-          </h5>
+          </h4>
           <span className="text-[11px] font-mono text-accent block mt-0.5">
             {item.badge}
           </span>
@@ -230,9 +230,9 @@ export default function TestimonialsScroller() {
                 </p>
 
                 <div className="pt-4 hairline-t">
-                  <h5 className="font-display font-bold text-base text-offwhite">
+                  <h4 className="font-display font-bold text-base text-offwhite">
                     {item.name}
-                  </h5>
+                  </h4>
                   <div className="flex items-center justify-between text-xs text-muted mt-1 font-mono">
                     <span>{item.badge}</span>
                     <span className="text-accent font-semibold">{item.source}</span>

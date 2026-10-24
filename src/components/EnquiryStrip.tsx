@@ -77,8 +77,10 @@ export default function EnquiryStrip() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-mono uppercase tracking-widest text-muted">Your Name *</label>
+                <label htmlFor="enquiry-name" className="text-xs font-mono uppercase tracking-widest text-[#B0AEA7]">Your Name *</label>
                 <input
+                  id="enquiry-name"
+                  name="name"
                   type="text"
                   required
                   placeholder="e.g. Ananya Sen"
@@ -89,8 +91,10 @@ export default function EnquiryStrip() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-mono uppercase tracking-widest text-muted">WhatsApp Phone *</label>
+                <label htmlFor="enquiry-phone" className="text-xs font-mono uppercase tracking-widest text-[#B0AEA7]">WhatsApp Phone *</label>
                 <input
+                  id="enquiry-phone"
+                  name="phone"
                   type="tel"
                   required
                   placeholder="e.g. 9876543210"
@@ -103,8 +107,11 @@ export default function EnquiryStrip() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-mono uppercase tracking-widest text-muted">Select Discipline *</label>
+                <label htmlFor="enquiry-discipline" className="text-xs font-mono uppercase tracking-widest text-[#B0AEA7]">Select Discipline *</label>
                 <select
+                  id="enquiry-discipline"
+                  name="discipline"
+                  aria-label="Select Class Discipline"
                   value={formData.classType}
                   onChange={(e) => setFormData({ ...formData, classType: e.target.value })}
                   className="w-full bg-surface border-b border-hairline focus:border-accent text-offwhite p-4 text-base outline-none transition-colors"
@@ -119,8 +126,11 @@ export default function EnquiryStrip() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-mono uppercase tracking-widest text-muted">Preferred Studio *</label>
+                <label htmlFor="enquiry-studio" className="text-xs font-mono uppercase tracking-widest text-[#B0AEA7]">Preferred Studio *</label>
                 <select
+                  id="enquiry-studio"
+                  name="studio"
+                  aria-label="Preferred Studio Location"
                   value={formData.studio}
                   onChange={(e) => setFormData({ ...formData, studio: e.target.value })}
                   className="w-full bg-surface border-b border-hairline focus:border-accent text-offwhite p-4 text-base outline-none transition-colors"
@@ -133,8 +143,10 @@ export default function EnquiryStrip() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-mono uppercase tracking-widest text-muted">Message or Preferred Batch</label>
+              <label htmlFor="enquiry-message" className="text-xs font-mono uppercase tracking-widest text-[#B0AEA7]">Message or Preferred Batch</label>
               <input
+                id="enquiry-message"
+                name="message"
                 type="text"
                 placeholder="e.g. Morning timing preference or beginner background..."
                 value={formData.message}

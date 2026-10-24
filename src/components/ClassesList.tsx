@@ -70,9 +70,9 @@ export default function ClassesList() {
             </div>
 
             {/* Tagline & Batches Description */}
-            <div className="max-w-md text-sm md:text-base text-muted space-y-2 md:opacity-80 group-hover:opacity-100 transition-opacity">
+            <div className="max-w-md text-sm md:text-base text-[#B0AEA7] space-y-2 group-hover:text-offwhite transition-colors">
               <p className="text-offwhite font-medium">{item.batches}</p>
-              <p className="text-xs md:text-sm line-clamp-2">{item.tagline}</p>
+              <p className="text-xs md:text-sm line-clamp-2 text-[#C0BEB8]">{item.tagline}</p>
             </div>
 
             {/* Enquire Link */}
