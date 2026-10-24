@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 md:px-12 py-6 flex items-center justify-between text-[#F2F0EB]">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-white/5 px-6 md:px-12 py-4 sm:py-5 flex items-center justify-between text-[#F2F0EB] transition-all">
         <Link href="/" className="font-display font-black text-xl md:text-2xl tracking-tighter hover:opacity-80 transition-opacity">
           FLAWLESS.
         </Link>

@@ -26,11 +26,12 @@ function GalleryReelCard({ reel }: { reel: StudioReelItem }) {
       <div className="relative w-full overflow-hidden bg-black aspect-[9/14]">
         <video
           src={reel.videoSrc}
+          poster={reel.videoSrc.replace(/\.mp4$/i, ".webp")}
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
 
@@ -128,11 +129,12 @@ function GalleryReviewCard({
         <video
           ref={videoRef}
           src={item.videoSrc}
+          poster={item.videoSrc.replace(/\.mp4$/i, ".webp")}
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
 

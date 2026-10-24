@@ -14,28 +14,36 @@ function ReviewVideoCard({
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Guarantee continuous autoplay on load
+  // IntersectionObserver: Only play when card is in viewport, pause when offscreen
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current.play().catch(() => {});
-    }
-  }, []);
+    const video = videoRef.current;
+    if (!video) return;
 
-  // Update muted state and play audio when unmuted
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isUnmuted;
-      if (isUnmuted) {
-        videoRef.current.play().catch(() => {});
-      }
-    }
+    video.muted = !isUnmuted;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
   }, [isUnmuted]);
 
   const toggleAudio = (e: React.MouseEvent) => {
     e.stopPropagation();
     onActivate(isUnmuted ? null : item.id);
   };
+
+  const posterPath = item.videoSrc.replace(/\.mp4$/i, ".webp");
 
   return (
     <div
@@ -53,11 +61,11 @@ function ReviewVideoCard({
         <video
           ref={videoRef}
           src={item.videoSrc}
-          autoPlay
+          poster={posterPath}
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
 

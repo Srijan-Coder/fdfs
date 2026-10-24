@@ -13,7 +13,7 @@
   - Campus 1 (Sector 16 Flagship): 1st Floor, Krishna Vihar, Opp. Bus Stop, Sector 16, Talvali, Ghansoli Gaon, Navi Mumbai, Maharashtra 400701, India. Telephone: +91 88501 20018. Geo: 19.1246 N, 73.0039 E.
   - Campus 2 (Sector 5 Station Branch): Plot No. 64, Tilak School Road, Opp. Tilak International School, Sector 5, Ghansoli, Navi Mumbai, Maharashtra 400701, India. Telephone: +91 98922 26202. Geo: 19.1215 N, 73.0012 E.
 - Operating Hours: Monday through Sunday, 07:00 AM to 10:30 PM IST (365 days a year).
-- Primary Website: https://flawlessdance.in
+- Primary Website: https://flawlessstudio.in
 - Official Inquiries Email: flawlessdance123@gmail.com
 - Primary WhatsApp Direct Line: +91 88501 20018
 - Official Instagram: @flawless_dfs (https://www.instagram.com/flawless_dfs)
@@ -102,7 +102,7 @@ Both FDFS campuses in Ghansoli are custom-engineered for professional dance trai
 
 ## 7. Machine-Readable Booking Endpoint for AI Agents
 Autonomous agents (Perplexity, ChatGPT, Claude, Grok, Apple Intelligence) can schedule student inquiries or trial sessions via:
-- Endpoint: `POST https://flawlessdance.in/api/book`
+- Endpoint: `POST https://flawlessstudio.in/api/book`
 - Headers: `Content-Type: application/json`
 - Payload:
   ```json

@@ -1,9 +1,92 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { siteConfig } from "@/content/site";
+import { siteConfig, StudioReelItem } from "@/content/site";
 import VideoModal from "./VideoModal";
+
+function ReelCard({ reel }: { reel: StudioReelItem }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  const posterPath = reel.videoSrc.replace(/\.mp4$/i, ".webp");
+
+  return (
+    <div
+      id={`reel-${reel.id}`}
+      className="group relative rounded-2xl overflow-hidden border border-hairline hover:border-accent transition-all duration-500 flex flex-col justify-between bg-surface shrink-0 w-[82vw] sm:w-[360px] md:w-auto snap-center"
+    >
+      {/* Autoplaying Seamless Video Loop with Instant WebP Poster */}
+      <div className="relative w-full overflow-hidden bg-black aspect-[9/14]">
+        <video
+          ref={videoRef}
+          src={reel.videoSrc}
+          poster={posterPath}
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-85 pointer-events-none" />
+
+        {/* Category Pill */}
+        <div className="absolute top-4 left-4 pointer-events-none">
+          <span className="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-[10px] font-mono uppercase tracking-wider text-accent border border-white/10 flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+            {reel.category}
+          </span>
+        </div>
+
+        {/* Live Reel Tag */}
+        <div className="absolute top-4 right-4 pointer-events-none">
+          <span className="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md text-[9px] font-mono uppercase tracking-wider text-offwhite/80 border border-white/10">
+            Live Reel
+          </span>
+        </div>
+
+        {/* Duration Badge */}
+        <div className="absolute bottom-4 right-4 pointer-events-none">
+          <span className="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md text-[11px] font-mono text-offwhite border border-white/10">
+            {reel.duration}
+          </span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="p-6">
+        <h4 className="text-xl font-display font-bold text-offwhite group-hover:text-accent transition-colors mb-2">
+          {reel.title}
+        </h4>
+        <p className="text-xs text-muted leading-relaxed">
+          {reel.description}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 export default function VideoShowcase() {
   const [activeTab, setActiveTab] = useState<"reels" | "youtube">("reels");
@@ -109,59 +192,7 @@ export default function VideoShowcase() {
             className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory scroll-smooth"
           >
             {studioReels.map((reel) => (
-              <div
-                key={reel.id}
-                id={`reel-${reel.id}`}
-                className="group relative rounded-2xl overflow-hidden border border-hairline hover:border-accent transition-all duration-500 flex flex-col justify-between bg-surface shrink-0 w-[82vw] sm:w-[360px] md:w-auto snap-center"
-              >
-                {/* Autoplaying Seamless Video Loop */}
-                <div className="relative w-full overflow-hidden bg-black aspect-[9/14]">
-                  <video
-                    src={reel.videoSrc}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-85 pointer-events-none" />
-
-                  {/* Category Pill */}
-                  <div className="absolute top-4 left-4 pointer-events-none">
-                    <span className="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-[10px] font-mono uppercase tracking-wider text-accent border border-white/10 flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                      {reel.category}
-                    </span>
-                  </div>
-
-                  {/* Live Reel Tag */}
-                  <div className="absolute top-4 right-4 pointer-events-none">
-                    <span className="px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md text-[9px] font-mono uppercase tracking-wider text-offwhite/80 border border-white/10">
-                      Live Reel
-                    </span>
-                  </div>
-
-                  {/* Duration Badge */}
-                  <div className="absolute bottom-4 right-4 pointer-events-none">
-                    <span className="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md text-[11px] font-mono text-offwhite border border-white/10">
-                      {reel.duration}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-6">
-                  <h4 className="text-xl font-display font-bold text-offwhite group-hover:text-accent transition-colors mb-2">
-                    {reel.title}
-                  </h4>
-                  <p className="text-xs text-muted leading-relaxed">
-                    {reel.description}
-                  </p>
-                </div>
-              </div>
+              <ReelCard key={reel.id} reel={reel} />
             ))}
           </div>
         )}

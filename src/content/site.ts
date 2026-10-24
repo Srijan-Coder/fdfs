@@ -93,7 +93,7 @@ export interface YouTubeShowcaseItem {
 }
 
 export const siteConfig = {
-  domain: "flawlessdance.in",
+  domain: "flawlessstudio.in",
   brandName: "Flawless Dance & Fitness Studio",
   shortName: "FDFS",
   whatsappNumber: "918850120018",

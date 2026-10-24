@@ -7,7 +7,7 @@ export default function Footer() {
   const { footer } = siteConfig;
 
   return (
-    <footer className="py-24 md:py-36 px-6 md:px-12 bg-[#0A0A0A] text-[#F2F0EB]">
+    <footer className="pt-24 pb-36 md:py-36 px-6 md:px-12 bg-[#0A0A0A] text-[#F2F0EB]">
       {/* 1. Let's Connect Block */}
       <div className="mb-24 hairline-b pb-16">
         <span className="text-xs font-mono uppercase tracking-widest text-accent mb-6 block">

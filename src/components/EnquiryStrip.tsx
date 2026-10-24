@@ -50,7 +50,7 @@ export default function EnquiryStrip() {
     if (formData.message) {
       text += `💬 *Note:* ${encodeURIComponent(formData.message)}%0A`;
     }
-    text += `%0A_Sent via flawlessdance.in_`;
+    text += `%0A_Sent via flawlessstudio.in_`;
 
     const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`;
     window.open(url, "_blank");
@@ -181,11 +181,12 @@ export default function EnquiryStrip() {
           <div className="relative rounded-2xl overflow-hidden border border-hairline bg-surface aspect-[9/13] sm:aspect-[9/12] lg:aspect-[9/14] w-full max-w-md mx-auto shadow-2xl group">
             <video
               src="/media/contact-reel.mp4"
+              poster="/media/contact-reel.webp"
               autoPlay
               loop
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 

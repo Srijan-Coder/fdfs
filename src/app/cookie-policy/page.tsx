@@ -30,7 +30,7 @@ const cookieItems = [
     badge: "PRIVACY FIRST",
     body: "We do not deploy invasive third-party ad-tracking pixels, cross-site behavioral trackers, or data-broker surveillance scripts.",
     bullets: [
-      "No Data Brokering: Your browsing habits on flawlessdance.in are never packaged, auctioned, or sold to marketing aggregators.",
+      "No Data Brokering: Your browsing habits on flawlessstudio.in are never packaged, auctioned, or sold to marketing aggregators.",
       "Direct Embedded Media: Embedded YouTube showcase choreographies and Google Maps studio directions operate under their standard privacy and caching sandboxes.",
     ],
   },

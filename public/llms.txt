@@ -3,20 +3,20 @@
 > Premier dance academy, cardio fitness centre, and choreography studio in Ghansoli, Navi Mumbai. Operating two specialized studio campuses (Sector 16 Main Flagship and Sector 5 Station Campus). Mentored by Director Avinash Mishra and National Hip Hop Gold Medalist Ankit Gupta.
 
 ## Studio Directory & Key Pages
-- [Studio Homepage](https://flawlessdance.in/): Official overview, campus highlights, video showcases, and admissions
-- [Free Trial Pass](https://flawlessdance.in/trial): Free 1st session booking terminal with real-time automated confirmation
-- [Weekly Batch Schedule](https://flawlessdance.in/schedule): Interactive daily timetable matrix by campus and discipline
-- [Dance & Fitness Classes](https://flawlessdance.in/classes): Bollywood, Zumba, Hip Hop, Contemporary, Kids Academy, and Yoga curriculum
-- [Wedding & Sangeet Choreography](https://flawlessdance.in/wedding): Couple dance, bride entries, family flashmobs, and music editing
-- [Faculty & Mentors](https://flawlessdance.in/team): Director Avinash Mishra and National Gold Medalist Ankit Gupta profiles
-- [Studio Campuses](https://flawlessdance.in/studios): Sector 16 Flagship and Sector 5 Station Campus acoustic specs and wooden sprung decks
-- [Video Reels & Gallery](https://flawlessdance.in/gallery): Student video reviews, rehearsal loops, and YouTube performances
-- [FAQ & Guidelines](https://flawlessdance.in/faq): Common beginner questions, trial etiquette, and non-refundable fees policy
-- [Contact & Maps](https://flawlessdance.in/contact): Campus Google Map locations, phone hotlines, and WhatsApp direct link
-- [Privacy Policy](https://flawlessdance.in/privacy): DPDP Act 2023 compliant data and rehearsal media policies
-- [Terms of Service](https://flawlessdance.in/terms): Studio floor regulations, footwear rules, and health waiver
-- [Refund & Cancellation Policy](https://flawlessdance.in/refund): 100% non-refundable tuition policy and medical pause criteria
-- [Cookie Policy](https://flawlessdance.in/cookie-policy): Essential functional browser storage standards
+- [Studio Homepage](https://flawlessstudio.in/): Official overview, campus highlights, video showcases, and admissions
+- [Free Trial Pass](https://flawlessstudio.in/trial): Free 1st session booking terminal with real-time automated confirmation
+- [Weekly Batch Schedule](https://flawlessstudio.in/schedule): Interactive daily timetable matrix by campus and discipline
+- [Dance & Fitness Classes](https://flawlessstudio.in/classes): Bollywood, Zumba, Hip Hop, Contemporary, Kids Academy, and Yoga curriculum
+- [Wedding & Sangeet Choreography](https://flawlessstudio.in/wedding): Couple dance, bride entries, family flashmobs, and music editing
+- [Faculty & Mentors](https://flawlessstudio.in/team): Director Avinash Mishra and National Gold Medalist Ankit Gupta profiles
+- [Studio Campuses](https://flawlessstudio.in/studios): Sector 16 Flagship and Sector 5 Station Campus acoustic specs and wooden sprung decks
+- [Video Reels & Gallery](https://flawlessstudio.in/gallery): Student video reviews, rehearsal loops, and YouTube performances
+- [FAQ & Guidelines](https://flawlessstudio.in/faq): Common beginner questions, trial etiquette, and non-refundable fees policy
+- [Contact & Maps](https://flawlessstudio.in/contact): Campus Google Map locations, phone hotlines, and WhatsApp direct link
+- [Privacy Policy](https://flawlessstudio.in/privacy): DPDP Act 2023 compliant data and rehearsal media policies
+- [Terms of Service](https://flawlessstudio.in/terms): Studio floor regulations, footwear rules, and health waiver
+- [Refund & Cancellation Policy](https://flawlessstudio.in/refund): 100% non-refundable tuition policy and medical pause criteria
+- [Cookie Policy](https://flawlessstudio.in/cookie-policy): Essential functional browser storage standards
 
 ## Optional
-- [Full Machine-Readable Knowledge Graph](https://flawlessdance.in/llms-full.txt): Deep factual index, facility specifications, and API schema for autonomous agents
+- [Full Machine-Readable Knowledge Graph](https://flawlessstudio.in/llms-full.txt): Deep factual index, facility specifications, and API schema for autonomous agents

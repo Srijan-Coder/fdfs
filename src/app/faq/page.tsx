@@ -373,7 +373,7 @@ export default function FAQPage() {
   }, []);
 
   return (
-    <main className="pt-24 min-h-screen bg-[#0A0A0A] text-[#F2F0EB]">
+    <main className="pt-24 pb-32 md:pb-20 min-h-screen bg-[#0A0A0A] text-[#F2F0EB]">
       {/* Editorial Header */}
       <section className="py-14 sm:py-20 md:py-28 px-4 sm:px-8 md:px-14 hairline-b bg-gradient-to-b from-[#111114] via-[#0A0A0A] to-[#0A0A0A]">
         <div className="max-w-7xl mx-auto">
@@ -482,7 +482,7 @@ export default function FAQPage() {
       </section>
 
       {/* Filter Tabs & Instant Search Control Strip */}
-      <section className="sticky top-20 z-30 py-4 px-4 sm:px-8 md:px-14 bg-[#0A0A0A]/95 backdrop-blur-xl hairline-b">
+      <section className="sticky top-[64px] sm:top-20 z-30 py-4 px-4 sm:px-8 md:px-14 bg-[#0A0A0A]/95 backdrop-blur-xl hairline-b">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
           
           {/* Category Tabs */}

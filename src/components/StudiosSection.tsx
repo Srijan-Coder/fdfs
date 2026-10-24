@@ -106,11 +106,12 @@ export default function StudiosSection() {
                   <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[9/15] rounded-2xl overflow-hidden border border-hairline bg-black shadow-2xl">
                     <video
                       src="/media/studio-tour-small.mp4"
+                      poster="/media/studio-tour-small.webp"
                       autoPlay
                       loop
                       muted
                       playsInline
-                      preload="auto"
+                      preload="metadata"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />

@@ -78,6 +78,12 @@ export const metadata: Metadata = {
     "geo.position": "19.1246;73.0039",
     "ICBM": "19.1246, 73.0039",
   },
+  verification: {
+    google: "25_I_etoR23Fovvgf83ms08LGSV2wbvxruqZ22ZmXlQ",
+    other: {
+      "msvalidate.01": "1E46E12D67013A79E4023DB7FBB8AB21",
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -195,6 +201,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark bg-[#0A0A0A]">
       <head>
+        <meta
+          name="google-site-verification"
+          content="25_I_etoR23Fovvgf83ms08LGSV2wbvxruqZ22ZmXlQ"
+        />
+        <meta
+          name="msvalidate.01"
+          content="1E46E12D67013A79E4023DB7FBB8AB21"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

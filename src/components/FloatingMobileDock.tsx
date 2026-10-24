@@ -4,7 +4,7 @@ import { siteConfig } from "@/content/site";
 
 export default function FloatingMobileDock() {
   return (
-    <div className="md:hidden fixed bottom-4 left-4 right-4 z-50 flex gap-3 p-2 rounded-full bg-[#141414]/90 backdrop-blur-xl border border-hairline shadow-2xl">
+    <div className="md:hidden fixed bottom-[max(1rem,env(safe-area-inset-bottom,1rem))] left-4 right-4 z-50 flex gap-3 p-2 rounded-full bg-[#141414]/95 backdrop-blur-xl border border-hairline shadow-2xl">
       <a
         href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hi%20Flawless%20Dance%20Studio,%20I%20want%20to%20inquire%20about%20classes`}
         target="_blank"

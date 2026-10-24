@@ -32,4 +32,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://flawlessdance.in/sitemap.xml
+Sitemap: https://flawlessstudio.in/sitemap.xml

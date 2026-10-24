@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://flawlessdance.in";
+  const baseUrl = "https://flawlessstudio.in";
   const lastModified = new Date();
 
   const routes = [
